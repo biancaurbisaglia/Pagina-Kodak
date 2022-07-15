@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------------------------------------------INDEX------------------------*/
+
+
+.bodyindex {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(241, 235, 224);
+    display: grid;
+    grid: 15% 20% 50% 12% / repeat(12, 1fr);
+    grid-template-areas:
+        " header header header  header  header  header  header  header  header  header  header  header"
+        "seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion2 seccion2 seccion2 "
+        "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo side side side"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    gap: 1%;
+
+}
+
+/*---------------------------------------------------Encabezado index------------------------*/
+header {
+    background-color: #FAB617;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    grid-area: header;  
+
+}
+.menunav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+
+}
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    color: #E30613;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+
+}
+.iconos {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.iconos a{
+    color: #E30613;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.iconos li{
+    font-size: 16px;
+    margin: 0 20px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+
+}
+
+.nav-toggle{
+    color: #E30613;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+
+}
+
+@media (max-width:768px){
+    header {
+        height: 60px;
+    
+    }
+    
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    
+    }
+    .iconos {
+        flex-direction: column;
+        align-items: center;
+        background-color: #dbc081;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        margin-right: 20px;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .iconos li{
+        line-height: 70px;
+    }
+    
+    .nav-toggle{
+        display: block;
+    
+    }
+
+    .iconos_visible{
+    left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+}
+}
+
+
+
+
+@media (hover:hover) {
+    .iconos a:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: white;
+        /*animacion de derecha a izquierda*/
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.4s ease-in-out;
+    }
+
+
+    .iconos a:hover:after {
+        /*animacion de derecha a izquierda*/
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+}
+
+
+/*---------------------------------------------------Cuerpo index------------------------*/
+.seccion1 {
+    background-color: wheat;
+    grid-area: seccion1;
+}
+
+.seccion2 {
+    background-color: wheat;
+    grid-area: seccion2;
+}
+
+.cuerpoindex {
+    background-color: wheat;
+    grid-area: cuerpo;
+}
+
+.side {
+    background-color: wheat;
+    grid-area: side;
+}
+
+/*---------------------------------------------------Pie de pagina index------------------------*/
+.pie {
+    background-color: rgb(231, 226, 217);
+    grid-area: footer;
+}
+
+.footermain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+.footermenu {
+    list-style: none;
+    text-align: center;
+
+}
+
+.footermenu a,
+.horario1,
+.horario2 {
+    color: black;
+    text-decoration: none;
+    padding: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+
+}
+
+
+.footer_titulo {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #E30613;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:768px) {
+
+    .bodyindex {
+        grid: 10% 12% 50% 12% 12% /repeat (12, 1fr);
+        grid-template-areas:
+            "header header header header header header header header header header header header"
+            "seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 seccion1 "
+            "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo "
+            "side side side side side side side side side side side side"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
+
+    }
+
+    .seccion2 {
+        display: none;
+    }
+
+}
+
+
+/*---------------------------------------------------UBICACION------------------------*/
+
+
+.bodyubi {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(241, 235, 224);
+    display: grid;
+    grid: 15% 70% 12% / repeat(12, 1fr);
+    grid-template-areas:
+        "header header header header header header header header header header header header"
+        "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo  cuerpo  cuerpo  cuerpo"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    gap: 1%;
+
+}
+
+/*---------------------------------------------------Encabezado ubicacion------------------------*/
+.encabezado {
+    grid-area: header;
+}
+@media screen and (max-width:768px) {
+
+    .bodyindex {
+        grid: 10% 50% 12% /repeat (12, 1fr);
+    }
+
+
+}
+/*---------------------------------------------------Cuerpo ubicacion------------------------*/
+
+.cuerpoubi {
+    grid-area: cuerpo;
+    background-color: wheat;
+}
+
+.textoubi {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+}
+
+.mapa {
+    text-align: center;
+}
+
+
+
+
+/*---------------------------------------------------Pie de pagina ubicacion------------------------*/
+
+.pie {
+    grid-area: footer;
+}
