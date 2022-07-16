@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,200;1,300&display=swap');
 
 * {
     margin: 0;
@@ -238,7 +238,46 @@ header {
     }
 
 }
+/*------------------------------------------------CONTACTO------------------------*/
+.bodycont{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(241, 235, 224);
+    display: grid;
+    grid: 15% 100% 12% / repeat(12, 1fr);
+    grid-template-areas:
+        "header header header header header header header header header header header header"
+        "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo  cuerpo  cuerpo  cuerpo"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    gap: 1%;
+}
 
+
+
+/*---------------------------------------------------Encabezado contacto------------------------*/
+
+.encabezado  {
+    grid-area: header;
+}
+
+@media screen and (max-width:768px) {
+
+    .bodycont {
+            grid: 10% 50% 12% /repeat (12, 1fr);
+        }
+    }
+/*---------------------------------------------------Cuerpo contacto------------------------*/
+
+.cuerpocont {
+    grid-area: cuerpo;
+    background-color: wheat;
+}
+
+/*---------------------------------------------------Pie de pagina contacto------------------------*/
+
+.pie {
+    grid-area: footer;
+}
 
 /*---------------------------------------------------UBICACION------------------------*/
 
@@ -254,21 +293,20 @@ header {
         "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo  cuerpo  cuerpo  cuerpo"
         "footer footer footer footer footer footer footer footer footer footer footer footer";
     gap: 1%;
-
 }
 
 /*---------------------------------------------------Encabezado ubicacion------------------------*/
-.encabezado {
+    .encabezado  {
     grid-area: header;
 }
+
 @media screen and (max-width:768px) {
 
-    .bodyindex {
+.bodyindex {
         grid: 10% 50% 12% /repeat (12, 1fr);
     }
-
-
 }
+
 /*---------------------------------------------------Cuerpo ubicacion------------------------*/
 
 .cuerpoubi {
@@ -278,8 +316,8 @@ header {
 
 .textoubi {
     text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
 }
 
 .mapa {
