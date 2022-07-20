@@ -1,73 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
-    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ff5ada0653.js" crossorigin="anonymous"></script>
-    <script defer src="index.js"></script>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nosotros</title>
+        <link rel="shortcut icon" href="./img/kodak.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/ff5ada0653.js" crossorigin="anonymous"></script>
+        <script defer src="index.js"></script>
+        <!-- CSS Boostrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+        <!-- CSS propio -->
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body class="bodynos">
-    <header class="encabezado">
-        <nav class="menunav">
-            <div class="logo">
-                <p class="kodak">Foto ya!</p>
-            </div>
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="iconos iconos_visible">
-                <li> <a href="index.html"> Inicio</a></li>
-                <li> <a href="productos.html">Productos</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>
-                <li> <a href="ubicacion.html">Ubicacion</a> </li>
-                <li> <a href="nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
+    <header class="container-fluid">
     </header>
+    <nav class="navbar navbar-expand-lg p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <span class="text-danger fs-5 fw-bold">Foto ya!</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="email" placeholder="correo electronico"
+                            aria-label="email">
+                        <button class="btn btn-danger btn-danger-outline-success" type="button">Ingresa</button>
+                    </form>
+            </div>
+        </div>
+    </nav>
+    
+    <!------------------- Imagenes----------------------------- -->
+    
     <main>
 
     </main>
-    <footer class="pie">
 
-        <div class="footermain">
-            <div>
-                <h4 class="footer_titulo">Pagina</h4>
-                <ul class="footermenu">
-                    <li> <a href="index.html">Inicio</a> </li>
-                    <li> <a href="productos.html">Productos</a> </li>
-                </ul>
-
-            </div>
-
-            <div>
-                <h4 class="footer_titulo">Horarios</h4>
-                <ul class="footermenu">
-                    <li class="horario1"> Lunes a viernes: 9 a 14hs-16 a 20hs </li>
-                    <li class="horario2"> Sabados: 10 a 13hs-17 a 20hs</li>
-                </ul>
-
-            </div>
-
-            <div>
-                <h4 class="footer_titulo">Sobre nosotros</h4>
-                <ul class="footermenu">
-                    <li> <a href="contacto.html">Contacto</a> </li>
-                    <li> <a href="nosotros.html">Nosotros</a> </li>
-                    <li> <a href="ubicacion.html">Ubicacion</a> </li>
-                </ul>
-
-            </div>
-
-        </div>
-
-    </footer>
-
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>

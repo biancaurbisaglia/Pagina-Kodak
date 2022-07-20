@@ -1,12 +1,12 @@
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".iconos");
+const app=document.getElementById('typewriter')
+;
 
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("iconos_visible");
-
-  if (navMenu.classList.contains("iconos_visible")) {
-    navToggle.setAttribute("aria-label", "Cerrar menú");
-  } else {
-    navToggle.setAttribute("aria-label", "Abrir menú");
-  }
+const typewriter = new Typewriter (app,{
+    loop:true,
+    delay:75
 });
+
+typewriter
+.typeString ('Avenida Colon 1249')
+.pauseFor (200)
+.start ();

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,78 +6,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foto ya!</title>
-    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/kodak.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/ff5ada0653.js" crossorigin="anonymous"></script>
-    <script defer src="index.js"></script>
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bodyindex">
-    <header class="encabezado">
-        <nav class="menunav">
-            <div class="logo">
-                <p class="kodak">Foto ya!</p>
-            </div>
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="iconos iconos_visible">
-                <li> <a href="index.html"> Inicio</a></li>
-                <li> <a href="productos.html">Productos</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>
-                <li> <a href="ubicacion.html">Ubicacion</a> </li>
-                <li> <a href="nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
+    <!------------------- Encabezado----------------------------- -->
+    <header class="container-fluid">
     </header>
-    <section class="seccion1"></section>
-    <section class="seccion2">
-        <div class="quiniela">
-            <p class="pquini">Tenemos</p>
-            <ul class="ulquini">
-                <li>Quiniela</li>
-                <li>Loteria</li>
-                <li>Poceados</li>
-            </ul>
-        </div>
-        <div class="img"></div>
+    <nav class="navbar navbar-expand-lg p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <span class="text-danger fs-5 fw-bold">Foto ya!</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="email" placeholder="correo electronico" aria-label="email">
+                    <button class="btn btn-danger btn-danger-outline-success" type="button">Ingresa</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!------------------- Imagenes----------------------------- -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./img/foto1.jpg" class="d-block w-100" alt="foto1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="./img/foto2.jpg" class="d-block w-100" alt="foto2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="./img/foto3.jpg" class="d-block w-100 foto3 " alt="foto3">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!------------------- INTRO----------------------------- -->
+
+    <section class="w-50 mx-auto text-center pt-5" id="intro">
+        <h1 class="p-3 fs-2 border-top border-3">Un local unico para que disfrutes de tus <span
+                class="text-danger">Fotografias digitales</span></h1>
+        <p class="p-3 fs-4 "><span class="text-danger">Foto ya!</span> es el local donde te brindamos servicios de
+            fotografias digitales, foto carnet en el acto,productos tales como portarretratos,albumes y mucho mas.Ademas
+            cuenta con un servicio de Quiniela en el mismo espacio fisico.</p>
     </section>
-    <main class="cuerpoindex"></main>
-    <section class="side"></section>
-    <footer class="pie">
 
-        <div class="footermain">
-            <div>
-                <h4 class="footer_titulo">Pagina</h4>
-                <ul class="footermenu">
-                    <li> <a href="index.html">Inicio</a> </li>
-                    <li> <a href="productos.html">Productos</a> </li>
-                </ul>
+    <!------------------- Servicios----------------------------- -->
 
+    <section class="container-fluid">
+        <div class="row w-75 mx-auto servicio-fila">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+                <img src="./img/kodak.png" alt="Kodak" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Productos Kodak</h3>
+                    <p class="px-4">Ofrecemos foto carnet,impresiones digitales y escaneados de papel fotografico 100%
+                        Kodak. </p>
+                </div>
             </div>
-
-            <div>
-                <h4 class="footer_titulo">Horarios</h4>
-                <ul class="footermenu">
-                    <li class="horario1"> Lunes a viernes: 9 a 14hs-16 a 20hs </li>
-                    <li class="horario2"> Sabados: 10 a 13hs-17 a 20hs</li>
-                </ul>
-
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+                <img src="./img/quiniela.png" alt="Quiniela" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Servicios de Quiniela</h3>
+                    <p class="px-4">Ofrecemos Quiniela,Poceados,raspaditas y los billetes del gordo de navidad e
+                        invierno. </p>
+                </div>
             </div>
-
-            <div>
-                <h4 class="footer_titulo">Sobre nosotros</h4>
-                <ul class="footermenu">
-                    <li> <a href="contacto.html">Contacto</a> </li>
-                    <li> <a href="nosotros.html">Nosotros</a> </li>
-                    <li> <a href="ubicacion.html">Ubicacion</a> </li>
-                </ul>
-
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+                <img src="./img/vgo.png" alt="Kodak" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Productos VGO</h3>
+                    <p class="px-4">Tenemos portarretratos VGO y albumes de foto. </p>
+                </div>
             </div>
-
         </div>
+    </section>
 
-    </footer>
+<!------------------- Ubicacion----------------------------- -->
+    <div id="local" class="border-top border-2">
+        <div class="mapa"></div>
+        <div>
+            <div class="wrapper">
+                <h2>Ubicado en Cordoba capital</h2>
+                <h2 class="text-danger mb-4" id="typewriter"></h2>
+                <p class="fs-5 text-body">Nos encontramos al frente de la jefatura de policia con
+                    el objetivo de estar mas al alcance de la gente y que asi ustedes puedan disfrutar de nuestros
+                    productos y servicios.</p>
+                <section class="d-flex" id="numeros-local">
+                    <div>
+                        <p class="text-danger fs-5">LUN A VIER</p>
+                        <p>9 a 14hs</p>
+                        <p>16 a 20hs</p>
+                    </div>
+                    <div>
+                        <p class="text-danger fs-5">SAB</p>
+                        <p>10 a 13hs</p>
+                        <p>17 a 20hs</p>
+                    </div>
+                    <div>
+                        <p class="text-danger fs-5">DOM</p>
+                        <p>Cerrado</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+<!------------------- Pie de pagina----------------------------- -->
+<footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+    <p class="fs-5 px-3 pt-3">Foto ya! &copy; Todos los derechos reservados 2022</p>
+    <div id="iconos">
+        <a href="#"><i class="bi bi-envelope"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+</footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
