@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,100;1,200;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  overflow-x: hidden; }
+
+/*---------------------------------------------------INDEX------------------------*/
+/*---------------------------------------------------Encabezado index------------------------*/
+#menu {
+  background-color: #FAB617; }
+
+#menu li > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #E30613; }
+
+#menu form > button {
+  font-size: 18px;
+  width: 120px;
+  font-weight: bold; }
+
+/*---------------------------------------------------Cuerpo index------------------------*/
+.carousel-inner {
+  max-height: 39rem; }
+
+.foto3 {
+  background-size: cover; }
+
+.mapa {
+  background: url(/proyectocoder/img/mapa.png);
+  width: 100%;
+  height: 500px;
+  background-size: cover; }
+
+#local {
+  background-color: #f3f3f3;
+  padding-bottom: 300px;
+  display: flex;
+  justify-content: center; }
+
+.wrapper {
+  width: 60%;
+  margin-left: 100px;
+  padding-top: 100px; }
+
+#numeros-local {
+  padding: 0 20px 0 0;
+  height: 48px; }
+
+#numeros-local div:not(:last-child) {
+  border-right: 2px solid #E30613; }
+
+#numeros-local div:not(:first-child) {
+  padding-left: 20px; }
+
+#numeros-local p {
+  margin: 0; }
+
+/*---------------------------------------------------Pie de pagina index------------------------*/
+footer {
+  background-color: #FAB617;
+  min-height: 100px; }
+
+footer p {
+  color: #E30613;
+  text-align: center; }
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #E30613; }
+
+/*---------------------------------------------------Media queries pantalla------------------------*/
+@media (max-width: 768px) {
+  #intro {
+    width: 90% !important; }
+  .servicio-fila {
+    width: 100% !important;
+    text-align: center; }
+  #bg-contacto {
+    top: -110px; } }
+
+@media (max-width: 576px) {
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+@media (max-width: 1200px) {
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px; }
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px; } }
+
+/*------------------------------------------------CONTACTO------------------------*/
+/*---------------------------------------------------Encabezado contacto------------------------*/
+/*---------------------------------------------------Cuerpo contacto------------------------*/
+#contenedor-formulario {
+  position: static;
+  top: 100px;
+  bottom: 100px;
+  background: #f3f3f3;
+  border-radius: 5px;
+  max-width: 500px; }
+
+#titulo-formulario {
+  color: black; }
+
+/*---------------------------------------------------UBICACION------------------------*/
+/*---------------------------------------------------Encabezado ubicacion------------------------*/
+/*---------------------------------------------------Cuerpo ubicacion------------------------*/
+/*---------------------------------------------------Pie de pagina ubicacion------------------------*/
